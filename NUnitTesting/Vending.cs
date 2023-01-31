@@ -14,9 +14,8 @@ namespace NUnitTesting
             {
                 if (amount >=  notes[i])
                 {
-           
-                    amount = amount % notes[i];
                     noteCounter[i] = amount / notes[i];
+                    amount = amount % notes[i];
                 }
             }
             Console.WriteLine("Currency amount ->");
@@ -24,7 +23,7 @@ namespace NUnitTesting
             {
                 if (noteCounter[i] != 0)
                 {
-                    Console.WriteLine(notes[i] + " : " + noteCounter[i]);
+                    Console.WriteLine(notes[i] +" : "+ noteCounter[i]);
                 }
             }
         }
