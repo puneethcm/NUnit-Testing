@@ -5,7 +5,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("\nWelcome to NUnit Testing Program");
-        Console.WriteLine("\n1:Vending Machine\n2:Temperatute Conversion\n3:Day Of Week\n4:Square Root");
+        Console.WriteLine("\n1:Vending Machine\n2:Temperatute Conversion\n3:Day Of Week\n4:Square Root\n5:Decimel to Binary");
         int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
         {
@@ -20,6 +20,9 @@ internal class Program
                 break;
             case 4:
                 SqrtNewton.FindSqrtNewton();
+                break;
+            case 5:
+                DecimelToBinary.FindDecimelToBinary();
                 break;
         }
         Console.ReadLine();
