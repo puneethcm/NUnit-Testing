@@ -21,8 +21,8 @@ namespace NUnitTesting
 					Console.WriteLine("\nEnter the Temperature to find Fahrenheit to Celsius");
 					f = Convert.ToInt32(Console.ReadLine());
 					c = (f - 32) * 5 / 9;
-                    Console.WriteLine("\nTemperature Farenheit to Celsius: {0} °C",c);
-                    break;
+                    			Console.WriteLine("\nTemperature Farenheit to Celsius: {0} °C",c);
+                    			break;
 			}
 		}
 	}
