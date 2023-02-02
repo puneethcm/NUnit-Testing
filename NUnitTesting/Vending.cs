@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace NUnitTesting
 {
     public class Vending
@@ -7,9 +7,8 @@ namespace NUnitTesting
         {
             Console.WriteLine("Enter the Amount");
             int amount = Convert.ToInt32(Console.ReadLine());
-
-			int[] notes = new int[] { 2000,1000, 500, 200, 100, 50, 20, 10, 5, 2, 1 };
-			int[] noteCounter = new int[11];
+            int[] notes = new int[] { 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1 };
+            int[] noteCounter = new int[11];
             for (int i = 0; i < 11; i++)
             {
                 if (amount >= notes[i])
@@ -19,7 +18,7 @@ namespace NUnitTesting
                 }
             }
             Console.WriteLine("Currency amount ->");
-            for(int i = 0; i < 11; i++)
+            for (int i = 0; i < 11; i++)
             {
                 if (noteCounter[i] != 0)
                 {
